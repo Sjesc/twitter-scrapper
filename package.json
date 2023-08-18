@@ -1,0 +1,27 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "setup": "npx cross-env PUPPETEER_SKIP_DOWNLOAD=true && npm install",
+    "start": "ts-node ./index.ts",
+    "build": "tsc",
+    "compile": "pkg --public -t node18-win-x64 ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^3.0.2",
+    "dotenv": "^16.3.1",
+    "ghost-cursor": "^1.1.19",
+    "puppeteer": "^21.0.3"
+  }
+}

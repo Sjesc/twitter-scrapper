@@ -1,0 +1,6 @@
+node_modules
+.env
+tweets-*.json
+twitter-config.json
+*.exe
+/dist
