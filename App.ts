@@ -19,7 +19,7 @@ class App {
 
   async delay(seconds: number) {
     const rnd = Math.random() * (seconds / 15);
-    const total = (seconds = seconds + rnd) * 1000;
+    const total = (seconds + rnd) * 1000;
 
     return new Promise((r) => setTimeout(r, total));
   }
@@ -98,9 +98,9 @@ class App {
     this.cursor.click(handle!);
     await handle.focus();
 
-    await this.delay(1);
+    await this.delay(2);
 
-    await handle!.type(text, { delay: 100 + Math.random() * 100 });
+    await handle!.type(text, { delay: 100 + Math.random() * 20 });
   }
 }
 
